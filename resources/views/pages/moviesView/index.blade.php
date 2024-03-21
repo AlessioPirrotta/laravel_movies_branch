@@ -77,6 +77,12 @@
                             class="btn btn-danger">
                              Delete
                             </button>
+
+                            <a
+                            type="submit"
+                            class="btn btn-danger" href="{{ route('movies.show', $movie) }}">
+                             Show
+                            </a>
                         </div>
                     </div>
                 @endforeach
