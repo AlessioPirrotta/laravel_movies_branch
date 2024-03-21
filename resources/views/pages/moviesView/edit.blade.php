@@ -58,7 +58,7 @@
             <label for="date" class="form-label">Release date</label>
             <input type="number" class="form-control" id="date" name="date">
         </div>
-        <button type="submit" class="btn btn-primary">Edit</button>
+        <button type="submit" class="btn btn-primary">Edita</button>
     </form>
 </body>
 
