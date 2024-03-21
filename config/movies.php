@@ -1,6 +1,7 @@
 <?php
 return [
     [
+        'id' => '1',
         'title' => 'The Shawshank Redemption',
         'plot' => 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -10,6 +11,7 @@ return [
         'date' => 1994,
     ],
     [
+        'id' => '2',
         'title' => 'The Godfather',
         'plot' => 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -19,6 +21,7 @@ return [
         'date' => 1972,
     ],
     [
+        'id' => '3',
         'title' => 'The Dark Knight',
         'plot' => 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -28,6 +31,7 @@ return [
         'date' => 2008,
     ],
     [
+        'id' => '4',
         'title' => 'Inception',
         'plot' => 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -37,6 +41,7 @@ return [
         'date' => 2010,
     ],
     [
+        'id' => '5',
         'title' => 'Pulp Fiction',
         'plot' => 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -46,6 +51,7 @@ return [
         'date' => 1994,
     ],
     [
+        'id' => '6',
         'title' => 'Schindler\'s List',
         'plot' => 'In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -55,6 +61,7 @@ return [
         'date' => 1993,
     ],
     [
+        'id' => '7',
         'title' => 'Forrest Gump',
         'plot' => 'The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -64,6 +71,7 @@ return [
         'date' => 1994,
     ],
     [
+        'id' => '8',
         'title' => 'The Matrix',
         'plot' => 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -73,6 +81,7 @@ return [
         'date' => 1999,
     ],
     [
+        'id' => '9',
         'title' => 'The Lord of the Rings: The Return of the King',
         'plot' => 'Gandalf and Aragorn lead the World of Men against Sauron\'s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
@@ -82,6 +91,7 @@ return [
         'date' => 2003,
     ],
     [
+        'id' => '10',
         'title' => 'Fight Club',
         'plot' => 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.',
         'thumb' => 'https://via.placeholder.com/300x450', // Placeholder URL
