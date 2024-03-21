@@ -31,6 +31,12 @@ class MovieController extends Controller
     {
         $request->validate([
             'title'=> 'required|max:255',
+            'plot' => 'required|max:8000',
+            'thumb' => 'required|max:255',
+            'original_lenguage' => 'required|max:255',
+            'vote' => 'required|max:10',
+            'director' => 'required|max:255',
+            'year' => 'required|max:255|regex:/^\d{4}$/,',
         ]);
 
         $formData = $request->All();
@@ -38,7 +44,7 @@ class MovieController extends Controller
         $newMovie->fill($formData);
         $newMovie->save();
         $movies= Movie::all();
-        return view('pages.comicsView.index', compact('movies'));
+        return view('pages.moviesView.index', compact('movies'));
 
     }
 
