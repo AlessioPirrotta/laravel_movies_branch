@@ -45,7 +45,7 @@ class MovieController extends Controller
      */
     public function edit(Movie $movie)
     {
-        //
+        return view('moviesView.edit', compact('movie'));
     }
 
     /**
@@ -53,14 +53,28 @@ class MovieController extends Controller
      */
     public function update(Request $request, Movie $movie)
     {
-        //
+        $movie->update($request->validate(
+            [
+                'title' => 'required|max:255',
+                'plot' => 'required|max:8000',
+                'thumb' => 'required|max:255',
+                'original_lenguage' => 'required|max:255',
+                'vote' => 'required|max:10',
+                'director' => 'required|max:255',
+                'year' => 'required|max:255|regex:/^\d{4}$/,',
+            ]
+        ));
+
+        return redirect()->route('movies.show', $movie);
     }
+
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(Movie $movie)
     {
-        //
+        $movie->delete();
+        return redirect()->route('movies.index');
     }
 }
