@@ -13,7 +13,7 @@ class MovieController extends Controller
     public function index()
     {
         $movies = Movie::all();
-        return view('pages.home', compact('movies'));
+        return view('pages.moviesView.index', compact('movies'));
     }
 
     /**
@@ -21,7 +21,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
+        return view ('pages.moviesView.create');
     }
 
     /**
@@ -29,7 +29,17 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'=> 'required|max:255',
+        ]);
+
+        $formData = $request->All();
+        $newMovie= new Movie();
+        $newMovie->fill($formData);
+        $newMovie->save();
+        $movies= Movie::all();
+        return view('pages.comicsView.index', compact('movies'));
+
     }
 
     /**
